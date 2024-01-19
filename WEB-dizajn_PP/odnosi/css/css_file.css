@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.body{
+  height: 100%
+}
+body
+{
+  display: grid;
+  background: #fff;
+  font-family: 'Manrope', sans-serif
+}
+.pozadina2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(../galerija/pozadina.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  transition: flex .4s ease;
+  position: relative;
+  border-radius: 20%;
+  font-size: 24px;
+}
+.section H1
+{
+  opacity: 0;
+  color: #fff;
+}
+.section H3
+{
+  opacity: 0;
+}
+.section:hover h1 
+{
+  opacity: 100;
+  transition: 1s;
+  transform: translateY(5px)
+}
+.section:hover h3
+{
+  opacity: 100;
+  transition: 1.5s;
+  transform: translateY(15px)
+}
+
+.section .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition:6s
+
+}
+
+.collapse li:hover
+{
+ background-color: rgba(116, 0, 25, 0.6)
+}
+
+#Navbar{
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,1);
+}
+
+#LogoSlika
+{
+  width: 50;
+  height: auto;
+  align-self: center;
+  padding: 10%;
+}
+
+#LogoSlika:hover{
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+
+.nav-brand{
+  font-size: 100%;
+  font-family: 'Fraunces', serif;
+}
+.Footer {
+  width: 100%;
+  padding: 1%;
+  margin-top: 25%;
+  display: inline-block;
+  background-color: rgba(109, 102, 101, 0.4);
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,1);
+  font-family: 'Fraunces', serif;
+  font-size: 125%;
+}
+
+.Footer ul {
+  width: 100%;
+  list-style: none;
+}
+
+.Footer ul li {
+  margin: 0;
+  float:left;
+  width: 32%;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Footer ul li ul {
+  padding: 0;
+}
+
+.Footer ul li ul li {
+  float: none;
+  padding: 5px 0;
+  font-weight: normal;
+   display:inline;
+}
+.naslov 
+{
+  background-color: rgb(255, 255, 255);
+  background-size: 100vw auto;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  transition: flex .4s ease;
+  position: relative;
+  border-radius: 20%;
+  font-size: 72px;
+}
