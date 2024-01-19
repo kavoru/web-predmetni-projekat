@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.body{
+  height: 100%
+}
+body
+{
+  display: grid;
+  background: #fff;
+  font-family: 'Manrope', sans-serif
+}
+.pozadina2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(../pozadina.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+.collapse li:hover
+{
+ background-color: rgba(116, 0, 25, 0.6)
+}
+
+#Navbar{
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,1);
+}
+
+#LogoSlika
+{
+  width: 50;
+  height: auto;
+  align-self: center;
+  padding: 10%;
+}
+
+#LogoSlika:hover{
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+
+
+/*DODALA OVA DVA---------------------------*/
+.styled-title {
+  font-family: 'Agbalumo', sans-serif;
+  font-size: 2.5rem;
+  color: rgba(116, 0, 25, 0.6);
+  
+}
+
+.styled-text {
+  font-family: 'Your-Selected-Font', sans-serif; 
+  color: rgba(116, 0, 25, 0.6); 
+  margin-top: 20px; 
+}
+.nav-brand{
+  font-size: 100%;
+  font-family: 'Fraunces', serif;
+}
+.Footer {
+  width: 100%;
+  padding: 1%;
+  margin-top: 45%;
+  display: inline-block;
+  background-color: rgba(109, 102, 101, 0.4);
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,1);
+  font-family: 'Fraunces', serif;
+  font-size: 125%;
+}
+
+.Footer ul {
+  width: 100%;
+  list-style: none;
+}
+
+.Footer ul li {
+  margin: 0;
+  float:left;
+  width: 32%;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Footer ul li ul {
+  padding: 0;
+}
+
+.Footer ul li ul li {
+  float: none;
+  padding: 5px 0;
+  font-weight: normal;
+   display:inline;
+}
