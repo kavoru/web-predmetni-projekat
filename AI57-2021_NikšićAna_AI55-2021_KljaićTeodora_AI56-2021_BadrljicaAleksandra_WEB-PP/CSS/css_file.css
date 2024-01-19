@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 105%;
+    box-sizing: border-box;
+}
+.body{
+  height: 100%
+}
+body
+{
+    display: grid;
+    background: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+.pozadina2{
+
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../galerija/pozadina.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*------------------------------------------------------------------*/
+/*-----------------------------NAVBAR--------------------------------*/
+/*------------------------------------------------------------------*/
+nav
+{
+  z-index: 1000;
+}
+.collapse li:hover
+{
+ background-color: rgba(116, 0, 25, 0.6)
+}
+
+#Navbar{
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,1);
+}
+
+#LogoSlika
+{
+  width: 50;
+  height: auto;
+  align-self: center;
+  padding: 10%;
+}
+
+#LogoSlika:hover{
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+
+.nav-brand{
+  font-size: 100%;
+  font-family: 'Fraunces', serif;
+
+}
+.container {
+    display: flex;
+    max-width: auto;
+    height: 70%;
+    margin-top: 8%;
+  }
+  .sekcija {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: flex .4s ease;
+    position: relative;
+    border-radius: 20%;
+    opacity: 0.5; /* Set default opacity */
+  }
+  .sekcija H1
+  {
+    opacity: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+  }
+  .sekcija H3
+  {
+    opacity: 0;
+  }
+  .sekcija:hover h1 
+  {
+    opacity: 0.8;
+    transition: 1s;
+    transform: translateY(5px)
+  }
+  .sekcija:hover h3
+  {
+    opacity: 100;
+    transition: 1.5s;
+    transform: translateY(15px)
+  }
+
+  .sekcija .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition:6s
+
+  }
+  
+  .sekcija .content {
+    z-index: 3;
+    margin-top: 7%;
+  }
+  
+  .sekcija:hover {
+    flex: 2;
+  }
+  .sekcija p
+{
+  opacity: 0;
+}
+.sekcija:hover
+{
+  opacity: 100;
+  transition: 1s;
+  transform: translateY(5px)
+}
+.HoverTekst{
+  opacity: 0;
+}
+.HoverTekst p
+{
+  text-align: left;
+  margin-top: 4%;
+  margin: 5%;
+  text-justify: auto;
+  font-size: 100%;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 100;
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,1);
+  padding: 1.5%;
+}
+.sekcija:hover + .HoverTekst
+{
+
+  opacity: 100;
+  transition: 1s;
+  transform: translateY(5px)
+}
+#Slika1 {
+  background-image: url(../Galerija/Uticaj-5.jpg);
+  height: 520px;
+  width: 420px;
+  margin-top: 2%;
+  margin-left: 40%;
+  -webkit-filter:sepia(100%); /*BOOTSTRAP*/
+  filter: sepia(100%);
+}
+.UticajNaslov
+{
+  color: #fff;
+  text-align: center;
+  margin-top: 8%;
+  
+}
+.UticajNaslov p
+{
+  text-align: left;
+  margin-top: 4%;
+}
+
+
+.GalerijaNaslov h1{
+  color: #ffffff;
+  opacity: 0.8;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  margin-top: 7%;
+  padding: 2%;
+  text-align: center;
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.9);
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.Galerija{
+  margin-top: 4%;
+}
+
+.Galerija img {
+  padding: 1%;
+  margin-left: 1%;
+  width: 350px;
+  height: 450px;
+  border-radius: 10%;
+  -webkit-filter: sepia(100%); /*BOOTSTRAP*/
+  filter: sepia(100%);
+  transition-duration: 1s;
+  border-radius: 20%;
+  opacity: 0.8;
+}
+
+.Galerija img:hover 
+{
+  opacity: 1;
+  -webkit-transform: scale(1.0);/*BOOTSTRAP*/
+  -ms-transform: scale(1.0); /*BOOTSTRAP*/
+  transform: scale(1.05);
+  -webkit-filter: none; /*BOOTSTRAP*/
+  filter: none;
+  border: 1px solid rgb(209, 179, 133);
+  padding: 1px;
+}
+
+/*------------------------------------------------------------------*/
+/*-----------------------------FOOTER-------------------------------*/
+/*------------------------------------------------------------------*/
+.Footer {
+  width: 100%;
+  padding: 1%;
+  margin-top: 8%;
+  display: inline-block;
+  background-color: rgba(109, 102, 101, 0.4);
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,1);
+  font-family: 'Fraunces', serif;
+}
+
+.Footer ul {
+  font-family: 'Fraunces', serif;
+  width: 100%;
+  list-style: none;
+}
+
+.Footer ul li {
+  font-family: 'Fraunces', serif;
+  margin: 0;
+  float:left;
+  width: 32%;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+.Footer ul li ul {
+  padding: 0;
+}
+
+.Footer ul li ul li {
+  font-family: 'Fraunces', serif;
+  float: none;
+  padding: 5px 0;
+  font-weight: normal;
+   display:inline;
+}
+/*-----------------------------------------------------------------*/
+/*-------------------------- BUTTON RESURSI TAB---------------------*/
+/*------------------------------------------------------------------*/
+button {
+  font-family: 'Fraunces', serif;
+  font-size: 1.7rem;
+  cursor:crosshair;
+  color: white;
+  background-color: #04AA6D;
+  padding: .1em .6em;
+  font-weight: bold;  
+  border: none;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+button {
+  background-color: rgba(109, 102, 101, 0.534);
+  color: rgb(255, 253, 253);
+  border: 2px solid #555555;
+}
+button:hover {
+  background-color: rgba(116, 0, 25, 0.6);
+  color: rgb(255, 255, 255);
+}
+.ResursiTekst
+{
+  margin: 6%;
+}
+.ResursiTekst h1
+{
+  color: #ffffff;
+  opacity: 0.8;
+  position: relative;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.9);
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  margin-top: 8%;
+}
+.ResursiTekst p
+{
+  color: #ffffff;
+  font-size: 200%;
+  margin: 2%;
+  font-family: 'Fraunces', serif;
+
+}
+.ResursiTekst h3
+{
+  color: #ffffff;
+  font-size: 200%;
+  margin: 2%;
+  font-family: 'Fraunces', serif;
+
+}
+.ResursiTekst h2
+{
+  color: #ffffff;
+  font-size: 140%;
+  margin: 2%;
+  font-family: 'Fraunces', serif;
+}
+.ResursiTekst p
+{
+  margin: 2%;
+  color: #ffffff;
+  font-size: 120%;
+}
+.Citati
+{
+  padding: 2%;
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.9);
+  margin: 2%;
+  color: #fff;
+  margin-top: 10%;
+  font-family: 'Fraunces', serif;
+}
+.Citati h1
+{
+  font-family: 'Fraunces', serif;
+}
+.Citati h2
+{
+  font-family: 'Fraunces', serif;
+}
+.Citati p
+{
+  font-family: 'Fraunces', serif;
+}
+.Citati li{
+  font-family: 'Fraunces', serif;
+}
+.Odnosi_Text p
+{
+  color: #fff;
+  margin-top: 25%;
+  font-family: 'Fraunces', serif; 
+  margin: 7%;
+  padding: 2%;
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.9);
+}
+.Odnosi_Text h1
+{
+  font-family: 'Fraunces', serif; 
+  text-align: center;
+  margin-top: 7%;
+  color: #fff;
+}
+.styled-text {
+  font-family: 'Fraunces', serif; 
+  color: rgb(255, 255, 255); 
+}
+.styled-title {
+  font-family: 'Fraunces', serif; 
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+} 
+.Biografija_Text
+{
+  margin: 4%;
+  font-family: 'Fraunces', serif; 
+  margin-top: 10%;
+  text-align: left;
+  color: #fff;
+}
+.Biografija_Text h1
+{
+  font-family: 'Fraunces', serif; 
+  text-align: LEFT;
+  color: #fff;
+}
+.Biografija_Text p{
+  color: #fff;
+  font-family: 'Fraunces', serif; 
+}
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
